@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1-month | EXAM</title>
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/main.min.css">
+</head>
+
+<body>
+
+
+  <template>
+    <li class="movies__item">
+      <div class="movie__picture_box">
+        <img class="movie_picture" src="./assets/images/andreas-preis-eagle-11549963850rsxrbueb5p.png"
+          alt="movie_picture">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 movi_eyes">
+          <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+          <path fill-rule="evenodd"
+            d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z"
+            clip-rule="evenodd" />
+        </svg>
+        <p class="movie__eyes_count"></p>
+      </div>
+      <h3 class="movie_title"></h3>
+      <div class="movie__data">
+        <img class="rating_img" src="./assets/images/Orange_star.svg-removebg-preview.png" alt="rating_img">
+        <p class="rating_number"></p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 release">
+          <path fill-rule="evenodd"
+            d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z"
+            clip-rule="evenodd" />
+        </svg>
+        <p class="movie_year"></p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 clock">
+          <path fill-rule="evenodd"
+            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+            clip-rule="evenodd" />
+        </svg>
+        <h4 class="movie__hour">
+          <p class="time"></p> hr <span class="minute"> </span> min
+        </h4>
+      </div>
+      <div class="movie__genres_box">
+        <h4 class="movie__genres"></h4>
+      </div>
+      <div class="movies__descript_box">
+        <p class="movies__descript"></p>
+      </div>
+      <div class="movi__info_box">
+        <button class="more__info_button">More info</button>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 bookmark">
+          <path fill-rule="evenodd"
+            d="M6.32 2.577a49.255 49.255 0 0 1 11.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 0 1-1.085.67L12 18.089l-7.165 3.583A.75.75 0 0 1 3.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93Z"
+            clip-rule="evenodd" />
+        </svg>
+      </div>
+    </li>
+  </template>
+
+
+
+  <header class="site_header">
+    <div class="container">
+      <div class="header__inner_box">
+        <div class="header__inner_logo">
+          <img class="site__logo" src="./assets/images/movie_logo.svg" alt="netflix_picture">
+        </div>
+        <div class="header__inner_buttons">
+          <a class="movies__and_series" href="#unlimited movies and series">Unlimited movies and series</a>
+          <button class="join__button">Join now</button>
+          <button class="login__button">login now</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="site__main">
+    <section class="hero">
+      <div class="container">
+        <div class="movies__box">
+          <h4 class="genre_movies"> Popular movies genre : <span class="all__movies_genre"> </span></h4>
+          <ul class="movies__list">
+
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="./films.js"></script>
+  <script src="./main.js"></script>
+  <script src="./tasks.js"></script>
+</body>
+
+</html>
